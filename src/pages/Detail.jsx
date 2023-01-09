@@ -5,7 +5,7 @@ function Detail({ movies }) {
   const { title, overview, poster_path, runtime, homepage, genres, vote_average } = movies;
 
   return (
-    <Container >
+    <Container>
       <Grid>
         <Col span={2}>
           <Button component="a" href="/" variant="light" color="pink" fullWidth mt="md" radius="md">
@@ -19,12 +19,12 @@ function Detail({ movies }) {
             height={500}
           />
 
-          <Group align={"center"} mt="xl">
+          <Group align={'center'} mt="xl">
             <Title mb="xl" order={1}>
               {title}
             </Title>
             <Badge color="pink" variant="light">
-              {vote_average}
+              {Number(vote_average).toFixed(1)}
             </Badge>
           </Group>
 

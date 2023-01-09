@@ -15,7 +15,7 @@ export default function MovieCard({ title, overview, backdrop_path, vote_average
           </Text>
         </div>
         <Badge color="pink" variant="light">
-          {vote_average}
+          {Number(vote_average).toFixed(1)}
         </Badge>
       </Group>
 
